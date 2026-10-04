@@ -43,13 +43,17 @@ begin
 
   Check($000E01EF,0);
   Check($000E01F0,1);
-  Check($000F01F0,1);
+  Check($000F01F0,2);
   Check($10FFFF,1);
   Check($10FFFF+1,-1);
   //some emojis
   Check($1F915,2);
   Check($1F479,2);
   Check($1F44D,2);
+
+  Check($1f3f7,2);
+  Check($FE0E,0);
+  Check($FE0F,0);
 
 
   writeln('Press enter to exit');
